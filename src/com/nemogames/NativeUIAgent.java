@@ -75,7 +75,7 @@ public class NativeUIAgent
 						JSONObject obj = new JSONObject();
 						try 
 						{
-							obj.put("eid", NativeUIEvent.MessageBoxButton);
+							obj.put("eid", NativeUIEvent.MessageBoxButton.getValue());
 							obj.put("button_index", 1);
 						} catch (JSONException e) {} finally
 						{
@@ -92,7 +92,7 @@ public class NativeUIAgent
 						JSONObject obj = new JSONObject();
 						try 
 						{
-							obj.put("eid", NativeUIEvent.MessageBoxButton);
+							obj.put("eid", NativeUIEvent.MessageBoxButton.getValue());
 							obj.put("button_index", 2);
 						} catch (JSONException e) {} finally
 						{
@@ -109,7 +109,7 @@ public class NativeUIAgent
 						JSONObject obj = new JSONObject();
 						try 
 						{
-							obj.put("eid", NativeUIEvent.MessageBoxButton);
+							obj.put("eid", NativeUIEvent.MessageBoxButton.getValue());
 							obj.put("button_index", 3);
 						} catch (JSONException e) {} finally
 						{
@@ -277,7 +277,7 @@ public class NativeUIAgent
 				        {
 				        	JSONObject obj = new JSONObject();
 				        	try {
-				        		obj.put("eid", NativeUIEvent.PopupMenuButton);
+				        		obj.put("eid", NativeUIEvent.PopupMenuButton.getValue());
 								obj.put("button_name", which+1);
 							} catch (JSONException e) { e.printStackTrace(); } finally
 							{
